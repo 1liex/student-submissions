@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+<body>
+    
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Educational Library</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  font-family: Arial, sans-serif;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  background:#f0f2f5;
+}
+
+.site-header {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  background:#f5f5f5;
+  padding:10px 20px;
+  gap:10px;
+}
+
+.left-side { display:flex; gap:10px; }
+
+.btn-link {
+  display:inline-block;
+  padding:6px 12px;
+  background:#007bff;
+  color:#fff;
+  text-decoration:none;
+  border-radius:5px;
+  font-size:0.9rem;
+}
+
+.center-side {
+  flex:1;
+  display:flex;
+  justify-content:center;
+}
+
+.search-form {
+  display:flex;
+  align-items:center;
+  background:#eee;
+  border-radius:5px;
+  overflow:hidden;
+  padding:5px;
+}
+
+.search-input {
+  padding:5px 10px;
+  border:none;
+  outline:none;
+  background:#eee;
+  color:#000;
+}
+
+.search-button {
+  background:#007bff;
+  border:none;
+  padding:5px 8px;
+  cursor:pointer;
+}
+
+.search-button svg { width:16px; height:16px; fill:#fff; }
+
+.right-side { display:flex; align-items:center; gap:10px; }
+
+.right-side svg { width:24px; height:24px; fill:#007bff; }
+
+.logo { font-size:1.2rem; font-weight:bold; }
+
+main {
+  flex:1;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:40px 20px;
+}
+
+.frame-wrapper {
+  max-height:500px;
+  overflow-y:auto;
+  width:100%;
+  display:flex;
+  justify-content:center;
+}
+
+.frame {
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap:20px;
+  max-width:900px;
+  width:100%;
+  background:#fff;
+  padding:30px;
+  border-radius:12px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background:#fff;
+  border:1px solid #e0e0e0;
+  border-radius:12px;
+  text-align:center;
+  padding:20px 15px;
+  transition:0.2s;
+}
+
+.card:hover {
+  transform:translateY(-5px);
+  box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card .circle {
+  width:70px;
+  height:70px;
+  border-radius:50%;
+  background:#f0f0f0;
+  margin:0 auto 10px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.card .circle svg {
+  width:36px;
+  height:36px;
+  fill:#888;
+}
+
+.card h3 {
+  font-size:1rem;
+  margin:8px 0 4px;
+  color:#000;
+}
+
+.card p {
+  margin:3px 0;
+  color:#555;
+  font-size:0.9rem;
+}
+
+.contact-btn {
+  display:inline-block;
+  margin-top:10px;
+  padding:6px 12px;
+  background:#007bff;
+  color:#fff;
+  text-decoration:none;
+  border-radius:6px;
+  font-size:0.85rem;
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="left-side">
+    <a class="btn-link" href="login.html">Log in</a>
+    <a class="btn-link" href="signup.html">Sign up</a>
+  </div>
+
+  <div class="center-side">
+    <form class="search-form" action="search.html" method="get">
+      <input type="search" name="q" class="search-input" placeholder="Search..." required>
+      <button type="submit" class="search-button" aria-label="Search">
+        <svg viewBox="0 0 24 24"><path d="M10 2a8 8 0 105.292 14.292l4.707 4.707 1.414-1.414-4.707-4.707A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z"/></svg>
+      </button>
+    </form>
+  </div>
+
+  <div class="right-side">
+    <div class="logo">Smart Educational Library</div>
+    <a class="home-btn" href="index.html" aria-label="Home">
+      <svg viewBox="0 0 24 24"><path d="M12 3l9 7v10a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-4H11v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V10l9-7z"/></svg>
+    </a>
+  </div>
+</header>
+
+<main>
+  <div class="frame-wrapper">
+    <div class="frame">
+      <div class="card">
+        <div class="circle">
+          <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 
+          4-4s-1.79-4-4-4-4 1.79-4 4 
+          1.79 4 4 4zm0 2c-2.67 
+          0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+        </div>
+        <h3>برمجة الويب المتقدمة</h3>
+        <p>M7</p>
+        <p>دكتور عبدالرحيم العوفي</p>
+        <a href="#" class="contact-btn">عرض</a>
+      </div>
+
+      <div class="card">
+        <div class="circle">
+          <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 
+          4-4s-1.79-4-4-4-4 1.79-4 4 
+          1.79 4 4 4zm0 2c-2.67 
+          0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+        </div>
+        <h3>البرمجة المتقدمة</h3>
+        <p>M6</p>
+        <p>دكتور احمد الحربي</p>
+        <a href="#" class="contact-btn">عرض</a>
+      </div>
+
+      <div class="card">
+        <div class="circle">
+          <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 
+          4-4s-1.79-4-4-4-4 1.79-4 4 
+          1.79 4 4 4zm0 2c-2.67 
+          0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+        </div>
+        <h3>تطوير التطبيقات</h3>
+        <p>M6</p>
+        <p>خالد نصر</p>
+        <a href="#" class="contact-btn">عرض</a>
+      </div>
+
+      <div class="card">
+        <div class="circle">
+          <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 
+          4-4s-1.79-4-4-4-4 1.79-4 4 
+          1.79 4 4 4zm0 2c-2.67 
+          0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+        </div>
+        <h3>هياكل البيانات والخوارزميات</h3>
+        <p>M8</p>
+        <p>دكتور محمد خان</p>
+        <a href="#" class="contact-btn">عرض</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; 2025 Smart Educational Library | Log in | Sign up</p>
+</footer>
+
+</body>
+</html>
