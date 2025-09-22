@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>صفحة تجريبية</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow px-4 py-3 flex items-center justify-between">
+    <!-- Logo -->
+    <div class="font-bold text-xl">LOGO</div>
+
+    <!-- Search -->
+    <div class="flex-1 mx-4">
+      <input type="text" placeholder="ابحث..." class="w-full rounded border px-3 py-1">
+    </div>
+
+    <!-- Icons -->
+    <div class="flex items-center space-x-4 space-x-reverse">
+      <button class="p-2">
+        <span class="material-icons">home</span>
+      </button>
+      <button class="p-2">
+        <span class="material-icons">account_circle</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Section -->
+  <main class="p-4 space-y-8">
+
+    <!-- Fails Section -->
+    <section>
+      <div class="flex justify-between items-center mb-2">
+        <h2 class="font-semibold">Fails (13)</h2>
+        <div>
+          <button class="px-2 slider-btn" data-target="fails" data-dir="left">&lt;</button>
+          <button class="px-2 slider-btn" data-target="fails" data-dir="right">&gt;</button>
+        </div>
+      </div>
+      <div class="overflow-hidden">
+        <div id="fails" class="flex space-x-4 space-x-reverse transition-transform duration-500">
+          <div class="bg-gray-700 text-white rounded p-3 w-48 flex-shrink-0">
+            <div class="h-20 bg-gray-500 mb-2"></div>
+            <p>عنوان ١</p>
+          </div>
+          <div class="bg-gray-700 text-white rounded p-3 w-48 flex-shrink-0">
+            <div class="h-20 bg-gray-500 mb-2"></div>
+            <p>عنوان ٢</p>
+          </div>
+          <div class="bg-gray-700 text-white rounded p-3 w-48 flex-shrink-0">
+            <div class="h-20 bg-gray-500 mb-2"></div>
+            <p>عنوان ٣</p>
+          </div>
+          <div class="bg-gray-700 text-white rounded p-3 w-48 flex-shrink-0">
+            <div class="h-20 bg-gray-500 mb-2"></div>
+            <p>عنوان ٤</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Youtube Section -->
+    <section>
+      <div class="flex justify-between items-center mb-2">
+        <h2 class="font-semibold">YouTube (7)</h2>
+        <div>
+          <button class="px-2 slider-btn" data-target="youtube" data-dir="left">&lt;</button>
+          <button class="px-2 slider-btn" data-target="youtube" data-dir="right">&gt;</button>
+        </div>
+      </div>
+      <div class="overflow-hidden">
+        <div id="youtube" class="flex space-x-4 space-x-reverse transition-transform duration-500">
+          <div class="bg-gray-700 text-white rounded p-3 text-center w-48 flex-shrink-0">
+            <div class="h-20 bg-gray-500 flex items-center justify-center mb-2">⏩</div>
+            <p class="mb-2">عنوان فيديو</p>
+            <button class="bg-white text-gray-800 px-2 py-1 rounded">Click</button>
+          </div>
+          <div class="bg-gray-700 text-white rounded p-3 text-center w-48 flex-shrink-0">
+            <div class="h-20 bg-gray-500 flex items-center justify-center mb-2">⏩</div>
+            <p class="mb-2">عنوان فيديو</p>
+            <button class="bg-white text-gray-800 px-2 py-1 rounded">Click</button>
+          </div>
+          <div class="bg-gray-700 text-white rounded p-3 text-center w-48 flex-shrink-0">
+            <div class="h-20 bg-gray-500 flex items-center justify-center mb-2">⏩</div>
+            <p class="mb-2">عنوان فيديو</p>
+            <button class="bg-white text-gray-800 px-2 py-1 rounded">Click</button>
+          </div>
+          <div class="bg-gray-700 text-white rounded p-3 text-center w-48 flex-shrink-0">
+            <div class="h-20 bg-gray-500 flex items-center justify-center mb-2">⏩</div>
+            <p class="mb-2">عنوان فيديو</p>
+            <button class="bg-white text-gray-800 px-2 py-1 rounded">Click</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Google Section -->
+    <section>
+      <div class="flex justify-between items-center mb-2">
+        <h2 class="font-semibold">Google (5)</h2>
+        <div>
+          <button class="px-2 slider-btn" data-target="google" data-dir="left">&lt;</button>
+          <button class="px-2 slider-btn" data-target="google" data-dir="right">&gt;</button>
+        </div>
+      </div>
+      <div class="overflow-hidden">
+        <div id="google" class="flex space-x-4 space-x-reverse transition-transform duration-500">
+          <div class="bg-gray-700 text-white rounded p-3 text-center w-48 flex-shrink-0">
+            <p class="font-bold text-lg">Google</p>
+            <p class="text-sm">نتيجة ١</p>
+          </div>
+          <div class="bg-gray-700 text-white rounded p-3 text-center w-48 flex-shrink-0">
+            <p class="font-bold text-lg">Google</p>
+            <p class="text-sm">نتيجة ٢</p>
+          </div>
+          <div class="bg-gray-700 text-white rounded p-3 text-center w-48 flex-shrink-0">
+            <p class="font-bold text-lg">Google</p>
+            <p class="text-sm">نتيجة ٣</p>
+          </div>
+          <div class="bg-gray-700 text-white rounded p-3 text-center w-48 flex-shrink-0">
+            <p class="font-bold text-lg">Google</p>
+            <p class="text-sm">نتيجة ٤</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- JS -->
+  <script>
+    const sliders = {};
+    document.querySelectorAll(".slider-btn").forEach(btn => {
+      const target = document.getElementById(btn.dataset.target);
+      if (!sliders[btn.dataset.target]) sliders[btn.dataset.target] = 0;
+
+      btn.addEventListener("click", () => {
+        const dir = btn.dataset.dir === "right" ? -1 : 1;
+        sliders[btn.dataset.target] += dir * 200; // كل ضغطة تتحرك 200px
+        target.style.transform = `translateX(${sliders[btn.dataset.target]}px)`;
+      });
+    });
+  </script>
+
+  <!-- Google Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</body>
+</html>
